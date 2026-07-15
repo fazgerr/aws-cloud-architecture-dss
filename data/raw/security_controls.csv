@@ -1,0 +1,6 @@
+Control,SecGain,SecCost,Layer7Protection,DDoSProtection,RequiredByDefault,Reason
+WAF,1,1,1,0,0,"Layer 7 web application protection"
+Shield,1,1,0,1,0,"DDoS protection"
+IAMLeastPrivilege,1,0.5,0,0,1,"Baseline least privilege access control"
+SecurityGroup,1,0.5,0,0,1,"Network access control"
+Logging,1,0.5,0,0,1,"Monitoring and auditing support"

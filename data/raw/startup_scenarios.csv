@@ -1,0 +1,2 @@
+Scenario,Bmax,OpsMax,SecMin,RelMin,LatMax,L7Req,DDoSReq,CostPriority,SecurityPriority,OpsPriority,PerformancePriority,ScalabilityPriority,ManagedPriority,EventPriority,DataPriority
+Base_Input,500.0,3.0,5,3,3,1,1,0.2,0.3333333333333333,0.2,0.3333333333333333,0.26666666666666666,0.2,0.13333333333333333,0.13333333333333333

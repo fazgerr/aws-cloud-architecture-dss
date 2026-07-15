@@ -1,0 +1,6 @@
+Architecture,CloudCostEstimate,Source,Notes
+A_Traditional_Web,450,AWS Pricing Calculator Proxy,"EC2 t3.medium + ALB + RDS db.t3.micro + S3 (Estimated for 1M req/month)"
+B_Managed_Container,380,AWS Pricing Calculator Proxy,"ECS Fargate 1vCPU/2GB + ALB + Aurora Serverless + S3"
+C_Serverless_API,120,AWS Pricing Calculator Proxy,"API Gateway + Lambda + DynamoDB + S3 (Highly cost-effective for low/medium traffic)"
+D_High_Scale_Microservices,850,AWS Pricing Calculator Proxy,"EKS 3x m5.large + Aurora + ElastiCache + S3 (Base cost is high)"
+E_Event_Driven_Serverless,140,AWS Pricing Calculator Proxy,"Lambda + SQS + EventBridge + DynamoDB + S3"

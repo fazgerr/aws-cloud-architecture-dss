@@ -1,0 +1,6 @@
+Architecture,APIFit,EventFit,DataFit,RelationalFit,BatchFit
+A_Traditional_Web,4,2,4,5,2
+B_Managed_Container,4,3,4,5,3
+C_Serverless_API,5,4,3,3,3
+D_High_Scale_Microservices,4,3,5,5,4
+E_Event_Driven_Serverless,3,5,3,3,5

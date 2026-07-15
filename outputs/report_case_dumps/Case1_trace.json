@@ -1,0 +1,194 @@
+{
+  "case": "Case1",
+  "selected_arch": "C_Serverless_API",
+  "max_regret_R": 0.0,
+  "objective_Z": 9315.77,
+  "slack": {
+    "Base Case": 370.0,
+    "Low Budget": 370.0,
+    "High Traffic": 370.0,
+    "High Security": 370.0
+  },
+  "unmet": {
+    "Base Case": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    },
+    "Low Budget": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    },
+    "High Traffic": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    },
+    "High Security": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    }
+  },
+  "actions": {
+    "Base Case": [],
+    "Low Budget": [],
+    "High Traffic": [],
+    "High Security": []
+  },
+  "routing": {
+    "Base Case": [
+      {
+        "workload": "API",
+        "path": "LambdaSync",
+        "allocated": 100.0
+      },
+      {
+        "workload": "Background",
+        "path": "LambdaAsyncQueue",
+        "allocated": 50.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 150.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 200.0
+      }
+    ],
+    "Low Budget": [
+      {
+        "workload": "API",
+        "path": "LambdaSync",
+        "allocated": 100.0
+      },
+      {
+        "workload": "Background",
+        "path": "LambdaAsyncQueue",
+        "allocated": 50.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 150.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 200.0
+      }
+    ],
+    "High Traffic": [
+      {
+        "workload": "API",
+        "path": "LambdaSync",
+        "allocated": 500.0
+      },
+      {
+        "workload": "Background",
+        "path": "LambdaAsyncQueue",
+        "allocated": 200.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 600.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 800.0
+      }
+    ],
+    "High Security": [
+      {
+        "workload": "API",
+        "path": "LambdaSync",
+        "allocated": 100.0
+      },
+      {
+        "workload": "Background",
+        "path": "LambdaAsyncQueue",
+        "allocated": 50.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 150.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 200.0
+      }
+    ]
+  },
+  "regret_matrix": {
+    "Base Case": {
+      "A_Traditional_Web": 0.2513921746863661,
+      "B_Managed_Container": 0.030011471901433384,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.07073100405383326,
+      "E_Event_Driven_Serverless": 0.28556577176934034
+    },
+    "Low Budget": {
+      "A_Traditional_Web": 0.2953296746863662,
+      "B_Managed_Container": 0.08357397190143356,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.15910600405383335,
+      "E_Event_Driven_Serverless": 0.3101595217693405
+    },
+    "High Traffic": {
+      "A_Traditional_Web": 0.2508296746863661,
+      "B_Managed_Container": 0.010698971901433318,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.026606004053833177,
+      "E_Event_Driven_Serverless": 0.2717532717693403
+    },
+    "High Security": {
+      "A_Traditional_Web": 0.22070467468636612,
+      "B_Managed_Container": 0.011448971901433347,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.03360600405383307,
+      "E_Event_Driven_Serverless": 0.2650032717693403
+    }
+  },
+  "adjusted_scores": {
+    "Base Case": {
+      "A_Traditional_Web": 0.5048590932248047,
+      "B_Managed_Container": 0.7262397960097374,
+      "C_Serverless_API": 0.7562512679111708,
+      "D_High_Scale_Microservices": 0.6855202638573376,
+      "E_Event_Driven_Serverless": 0.4706854961418305
+    },
+    "Low Budget": {
+      "A_Traditional_Web": 0.4496090932248048,
+      "B_Managed_Container": 0.6613647960097374,
+      "C_Serverless_API": 0.744938767911171,
+      "D_High_Scale_Microservices": 0.5858327638573376,
+      "E_Event_Driven_Serverless": 0.4347792461418305
+    },
+    "High Traffic": {
+      "A_Traditional_Web": 0.5197340932248047,
+      "B_Managed_Container": 0.7598647960097374,
+      "C_Serverless_API": 0.7705637679111708,
+      "D_High_Scale_Microservices": 0.7439577638573376,
+      "E_Event_Driven_Serverless": 0.4988104961418305
+    },
+    "High Security": {
+      "A_Traditional_Web": 0.5431090932248047,
+      "B_Managed_Container": 0.7523647960097375,
+      "C_Serverless_API": 0.7638137679111708,
+      "D_High_Scale_Microservices": 0.7302077638573378,
+      "E_Event_Driven_Serverless": 0.49881049614183054
+    }
+  }
+}

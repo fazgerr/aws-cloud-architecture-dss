@@ -1,0 +1,9 @@
+case_id,parameter,value,interpretation,report_reference
+Case 1,budget,400,Monthly budget constraint for Base Case scenario,Table 8 & Section 4.1.1
+Case 1,workload_profile,async_event,Event-driven async workload,Section 4.1.1
+Case 2,budget,1500,Monthly budget constraint for Base Case scenario,Table 8 & Section 4.1.2
+Case 2,workload_profile,sync_api,Synchronous API with steady traffic,Section 4.1.2
+Case 2,excluded_archs,"C_Serverless_API, E_Event_Driven_Serverless",Hard rejection of C and E due to control requirements,Section 4.1.2
+Case 3,budget,2500,Monthly budget constraint for Base Case scenario,Table 8 & Section 4.1.3
+Case 3,workload_profile,sync_api,Synchronous API with spiky traffic,Section 4.1.3
+Case 3,sensitive_data,True,Financial/Security workload handling PII,Section 4.1.3

@@ -1,0 +1,6 @@
+architecture,ops_hours_per_day
+A_Traditional_Web,2.0
+B_Managed_Container,1.0
+C_Serverless_API,0.5
+D_High_Scale_Microservices,3.5
+E_Event_Driven_Serverless,1.0

@@ -1,0 +1,5 @@
+action,monthly_cost,applies_to_scenario,reduces_regret_by,notes
+AutoScaling,20,High Traffic,0.05,Improves scale response
+QueueBuffering,10,High Traffic,0.08,Decouples bursts and background jobs
+WAF,20,High Security,0.1,Risk-based web firewall
+ShieldAdvanced,3000,High Security,0.2,Advanced DDoS protection

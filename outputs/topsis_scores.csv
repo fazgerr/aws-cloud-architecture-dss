@@ -1,0 +1,6 @@
+Architecture,TOPSIS_Score,Rank
+B_Managed_Container,0.6298,1
+C_Serverless_API,0.628,2
+E_Event_Driven_Serverless,0.6062,3
+D_High_Scale_Microservices,0.4884,4
+A_Traditional_Web,0.2595,5

@@ -1,0 +1,9 @@
+path_id,service_name,path_type,path_cost,path_risk,notes
+EC2Compute,Amazon EC2,sync_compute,50,0.05,Standard EC2 compute
+FargateAPI,ECS Fargate,api_compute,30,0.05,Container API
+FargateWorker,ECS Fargate worker,batch_compute,30,0.05,Container background task
+LambdaSync,AWS Lambda,sync_compute,10,0.05,15 min timeout
+LambdaAsyncQueue,AWS Lambda + SQS,async_compute,10,0.05,Async queue processing
+ManagedDB,RDS/DynamoDB,database,80,0.01,Managed database path
+StoragePath,S3,storage,10,0.01,Object storage
+SpotWorker,EC2 Spot worker,batch_compute,5,0.50,High interruption risk

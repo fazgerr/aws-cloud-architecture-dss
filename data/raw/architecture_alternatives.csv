@@ -1,0 +1,6 @@
+Architecture,DisplayName,CoreServices,Description
+A_Traditional_Web,Traditional Web,EC2 + ALB + RDS + S3,Classic web application architecture with more direct infrastructure control
+B_Managed_Container,Managed Container,ECS Fargate + ALB + Aurora/RDS + S3,Container-based architecture with reduced server management
+C_Serverless_API,Serverless API,API Gateway + Lambda + DynamoDB + S3,Low-operations serverless API architecture
+D_High_Scale_Microservices,High-Scale Microservices,ECS/EKS + Aurora/DynamoDB + S3 + ElastiCache,High-scale architecture for complex and performance-critical systems
+E_Event_Driven_Serverless,Event-Driven Serverless,Lambda + SQS + EventBridge + DynamoDB + S3,Event-driven serverless architecture for asynchronous workloads

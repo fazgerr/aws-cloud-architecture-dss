@@ -1,0 +1,6 @@
+Scenario,Architecture,S,R,Q,Rank
+Base_Input,B_Managed_Container,0.3623,0.0778,0.0183,1
+Base_Input,C_Serverless_API,0.3498,0.1556,0.5,2
+Base_Input,E_Event_Driven_Serverless,0.4363,0.1556,0.6265,3
+Base_Input,D_High_Scale_Microservices,0.4665,0.154,0.66,4
+Base_Input,A_Traditional_Web,0.6919,0.154,0.9895,5

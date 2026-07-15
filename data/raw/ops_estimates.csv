@@ -1,0 +1,7 @@
+Architecture,OpsHoursPerDay,Source,Reason
+A_Traditional_Web,2.5,Mentor/Rubric,"EC2-based architecture requires OS patching, scaling rules, and server maintenance"
+B_Managed_Container,1.5,Mentor/Rubric,"Fargate reduces server management, but container lifecycle and ALB routing operations remain"
+C_Serverless_API,0.5,Mentor/Rubric,"Serverless eliminates underlying infrastructure management entirely"
+D_High_Scale_Microservices,3.0,Mentor/Rubric,"Kubernetes (EKS) and microservices routing introduce significant operational burden"
+E_Event_Driven_Serverless,0.75,Mentor/Rubric,"Managed event services reduce operations, but tracing async errors takes slight effort"
+

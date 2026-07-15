@@ -1,0 +1,194 @@
+{
+  "case": "Case2",
+  "selected_arch": "B_Managed_Container",
+  "max_regret_R": 0.0,
+  "objective_Z": 5146.65,
+  "slack": {
+    "Base Case": 150.0,
+    "Low Budget": 150.0,
+    "High Traffic": 150.0,
+    "High Security": 150.0
+  },
+  "unmet": {
+    "Base Case": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    },
+    "Low Budget": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    },
+    "High Traffic": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    },
+    "High Security": {
+      "API": 0.0,
+      "Background": 0.0,
+      "Database": 0.0,
+      "Storage": 0.0
+    }
+  },
+  "actions": {
+    "Base Case": [],
+    "Low Budget": [],
+    "High Traffic": [],
+    "High Security": []
+  },
+  "routing": {
+    "Base Case": [
+      {
+        "workload": "API",
+        "path": "FargateAPI",
+        "allocated": 100.0
+      },
+      {
+        "workload": "Background",
+        "path": "FargateWorker",
+        "allocated": 50.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 150.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 200.0
+      }
+    ],
+    "Low Budget": [
+      {
+        "workload": "API",
+        "path": "FargateAPI",
+        "allocated": 100.0
+      },
+      {
+        "workload": "Background",
+        "path": "FargateWorker",
+        "allocated": 50.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 150.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 200.0
+      }
+    ],
+    "High Traffic": [
+      {
+        "workload": "API",
+        "path": "FargateAPI",
+        "allocated": 500.0
+      },
+      {
+        "workload": "Background",
+        "path": "FargateWorker",
+        "allocated": 200.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 600.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 800.0
+      }
+    ],
+    "High Security": [
+      {
+        "workload": "API",
+        "path": "FargateAPI",
+        "allocated": 100.0
+      },
+      {
+        "workload": "Background",
+        "path": "FargateWorker",
+        "allocated": 50.0
+      },
+      {
+        "workload": "Database",
+        "path": "ManagedDB",
+        "allocated": 150.0
+      },
+      {
+        "workload": "Storage",
+        "path": "StoragePath",
+        "allocated": 200.0
+      }
+    ]
+  },
+  "regret_matrix": {
+    "Base Case": {
+      "A_Traditional_Web": 0.12255517018929718,
+      "B_Managed_Container": 0.0,
+      "C_Serverless_API": 0.7200347062808246,
+      "D_High_Scale_Microservices": 0.03283263099462508,
+      "E_Event_Driven_Serverless": 0.7200347062808246
+    },
+    "Low Budget": {
+      "A_Traditional_Web": 0.12268017018929711,
+      "B_Managed_Container": 0.0,
+      "C_Serverless_API": 0.6551597062808246,
+      "D_High_Scale_Microservices": 0.0676451309946251,
+      "E_Event_Driven_Serverless": 0.6551597062808246
+    },
+    "High Traffic": {
+      "A_Traditional_Web": 0.13868017018929724,
+      "B_Managed_Container": 0.0,
+      "C_Serverless_API": 0.7536597062808246,
+      "D_High_Scale_Microservices": 0.008020130994625063,
+      "E_Event_Driven_Serverless": 0.7536597062808246
+    },
+    "High Security": {
+      "A_Traditional_Web": 0.10368017018929732,
+      "B_Managed_Container": 0.0,
+      "C_Serverless_API": 0.7461597062808247,
+      "D_High_Scale_Microservices": 0.014270130994625263,
+      "E_Event_Driven_Serverless": 0.7461597062808247
+    }
+  },
+  "adjusted_scores": {
+    "Base Case": {
+      "A_Traditional_Web": 0.5974795360915274,
+      "B_Managed_Container": 0.7200347062808246,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.6872020752861995,
+      "E_Event_Driven_Serverless": 0.0
+    },
+    "Low Budget": {
+      "A_Traditional_Web": 0.5324795360915275,
+      "B_Managed_Container": 0.6551597062808246,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.5875145752861995,
+      "E_Event_Driven_Serverless": 0.0
+    },
+    "High Traffic": {
+      "A_Traditional_Web": 0.6149795360915273,
+      "B_Managed_Container": 0.7536597062808246,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.7456395752861995,
+      "E_Event_Driven_Serverless": 0.0
+    },
+    "High Security": {
+      "A_Traditional_Web": 0.6424795360915274,
+      "B_Managed_Container": 0.7461597062808247,
+      "C_Serverless_API": 0.0,
+      "D_High_Scale_Microservices": 0.7318895752861995,
+      "E_Event_Driven_Serverless": 0.0
+    }
+  }
+}

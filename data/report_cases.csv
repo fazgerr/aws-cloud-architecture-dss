@@ -1,0 +1,4 @@
+case_id,budget,workload_profile,traffic_pattern,execution_duration,sensitive_data,web_risk,ddos_risk,ddos_protection_level
+Case 1,400,sync_api,spiky,short,False,low,low,standard
+Case 2,1500,data_heavy,steady,long_running,False,low,low,standard
+Case 3,2500,sync_api,spiky,short,True,high,high,advanced

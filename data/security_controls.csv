@@ -1,0 +1,14 @@
+risk,control,type,monthly_cost,mandatory,reason
+baseline,IAM Least Privilege,hard_constraint,0,true,Identity security baseline; always required
+baseline,Security Groups / VPC Controls,hard_constraint,0,true,Network-layer isolation; always required
+baseline,Centralized Logging / CloudWatch / CloudTrail,hard_constraint,5,true,Audit and traceability baseline; minimal cost
+web_risk,AWS WAF,paid_control,20,true,Protects against web attacks and SQL injection; mandatory when web risk selected
+web_risk,WAF Rate-Based Rules,paid_control,0,true,Included in WAF; rate limiting for DDoS basic mitigation
+sensitive_data,AES-256 Encryption / KMS,paid_control,20,true,Encryption at rest and in transit for sensitive/payment data
+sensitive_data,AWS Secrets Manager,recommended,5,false,Secrets rotation management; strongly recommended for sensitive data
+sensitive_data,Backup Policy / AWS Backup,recommended,5,false,Data durability for sensitive workloads
+sensitive_data,AWS Config / CloudTrail Advanced,recommended,5,false,Auditability and compliance tracking for sensitive data
+ddos_risk_basic,CloudFront / WAF Rate-Based Rules,recommended,0,false,Basic DDoS mitigation; rate limiting; included if WAF already active
+ddos_risk_basic,Shield Standard,hard_constraint,0,true,Always-on basic DDoS protection; no additional cost; mandatory baseline
+ddos_risk_advanced,Shield Advanced,paid_control,3000,true,Advanced DDoS protection with SRT access and financial protection; only for advanced DDoS selection
+ddos_risk_advanced,CloudFront Distribution,paid_control,20,true,Edge distribution reduces DDoS impact surface; required with Shield Advanced

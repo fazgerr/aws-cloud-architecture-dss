@@ -1,0 +1,4 @@
+case_id,architecture,api_path,actions,slack,r,z
+Case 1,C,LambdaSync,None,0,0.003,1082.913
+Case 2,B,FargateAPI,None,0,0.000,2366.300
+Case 3,C,LambdaSync,QueueBuffering,164,0.312,2309.525

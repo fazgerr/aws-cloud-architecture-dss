@@ -1,0 +1,77 @@
+# =========================
+# Secrets and local config
+# =========================
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# =========================
+# Python virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Python cache files
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Test and analysis cache
+# =========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# =========================
+# Build and package files
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# IDE settings
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Operating system files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary and log files
+# =========================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# =========================
+# GAMS generated outputs
+# =========================
+*.lst
+*.lxi
+*.gdx
+*.log
+
+# =========================
+# Local ZIP packages
+# =========================
+AWS_Optimization_Final*.zip

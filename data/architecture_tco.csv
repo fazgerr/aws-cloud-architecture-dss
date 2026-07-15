@@ -1,0 +1,6 @@
+architecture,cloud_cost,ops_hours_day,eng_cost,full_tco
+A_Traditional_Web,180,2.0,3000,3180
+B_Managed_Container,150,1.0,1500,1650
+C_Serverless_API,20,0.5,750,770
+D_High_Scale_Microservices,650,3.5,5250,5900
+E_Event_Driven_Serverless,35,1.0,1500,1535

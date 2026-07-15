@@ -1,0 +1,5 @@
+scenario,API,Background,Database,Storage
+Base Case,100,50,150,200
+Low Budget,100,50,150,200
+High Traffic,500,200,600,800
+High Security,100,50,150,200

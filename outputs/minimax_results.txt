@@ -1,0 +1,12 @@
+=> Dengeleyici Ideal Mimari: C_Serverless_API
+Minimax Regret R): 0.3727
+Butce Asimi (SlackB): $0.0
+Altyapi Maliyeti: $120.0
+Guvenlik Maliyeti: $90
+Ops Maliyeti: $750.0
+* WAF
+* Shield
+* DataEncryption
+* IAMLeastPrivilege
+* SecurityGroup
+* CentralizedLogging

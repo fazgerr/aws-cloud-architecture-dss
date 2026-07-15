@@ -1,0 +1,42 @@
+architecture_id,component_role,service_name,purpose,connection_order,is_security_control,is_monitoring
+A_Traditional_Web,dns,Amazon Route 53,DNS routing and health checks,1,false,false
+A_Traditional_Web,load_balancer,Application Load Balancer,Routes HTTP/HTTPS traffic to EC2 instances,2,false,false
+A_Traditional_Web,compute,Amazon EC2 Auto Scaling Group,Runs application servers with auto-scaling,3,false,false
+A_Traditional_Web,database,Amazon RDS (MySQL/PostgreSQL),Relational database for application data,4,false,false
+A_Traditional_Web,storage,Amazon S3,Static file and object storage,5,false,false
+A_Traditional_Web,monitoring,Amazon CloudWatch,Logs metrics and triggers alarms,6,false,true
+A_Traditional_Web,security_network,Security Groups / VPC,Network isolation and access control,0,true,false
+A_Traditional_Web,security_identity,IAM Roles & Policies,Least-privilege access control,0,true,false
+B_Managed_Container,dns,Amazon Route 53,DNS routing and health checks,1,false,false
+B_Managed_Container,load_balancer,Application Load Balancer,Routes HTTP/HTTPS traffic to ECS tasks,2,false,false
+B_Managed_Container,compute,Amazon ECS Fargate,Runs containerised application without managing servers,3,false,false
+B_Managed_Container,database,Amazon RDS (PostgreSQL/MySQL),Relational database for application data,4,false,false
+B_Managed_Container,storage,Amazon S3,Static assets and object storage,5,false,false
+B_Managed_Container,monitoring,Amazon CloudWatch,Container and application metrics and logs,6,false,true
+B_Managed_Container,registry,Amazon ECR,Container image registry,0,false,false
+B_Managed_Container,security_network,Security Groups / VPC,Network isolation for ECS tasks and RDS,0,true,false
+B_Managed_Container,security_identity,IAM Task Roles,Least-privilege access for ECS containers,0,true,false
+C_Serverless_API,entry,Amazon API Gateway,Manages API endpoints and throttling,1,false,false
+C_Serverless_API,compute,AWS Lambda,Executes function code on demand — no servers,2,false,false
+C_Serverless_API,database,Amazon DynamoDB,Serverless NoSQL database with auto-scaling,3,false,false
+C_Serverless_API,storage,Amazon S3,Object storage for files and assets,4,false,false
+C_Serverless_API,monitoring,Amazon CloudWatch,Function logs metrics and tracing via X-Ray,5,false,true
+C_Serverless_API,security_network,VPC Lambda (optional),Isolate Lambda in private subnet for sensitive data,0,true,false
+C_Serverless_API,security_identity,IAM Execution Roles,Least-privilege Lambda function permissions,0,true,false
+D_High_Scale_Microservices,dns,Amazon Route 53,DNS and latency-based routing,1,false,false
+D_High_Scale_Microservices,load_balancer,Application Load Balancer,Routes traffic across Kubernetes services,2,false,false
+D_High_Scale_Microservices,compute,Amazon EKS (Kubernetes),Orchestrates containerised microservices at scale,3,false,false
+D_High_Scale_Microservices,database,Amazon Aurora (PostgreSQL),High-performance relational database with read replicas,4,false,false
+D_High_Scale_Microservices,cache,Amazon ElastiCache (Redis),In-memory caching for low-latency data access,5,false,false
+D_High_Scale_Microservices,storage,Amazon S3,Object and data lake storage,6,false,false
+D_High_Scale_Microservices,monitoring,Amazon CloudWatch + Container Insights,Cluster and pod-level metrics and logs,7,false,true
+D_High_Scale_Microservices,security_network,VPC / Network Policies,Kubernetes network policies and VPC isolation,0,true,false
+D_High_Scale_Microservices,security_identity,IAM IRSA (Pod Roles),Fine-grained IAM roles per Kubernetes service account,0,true,false
+E_Event_Driven_Serverless,entry,Event Source (API GW / S3 / SNS),Emits events that trigger the processing pipeline,1,false,false
+E_Event_Driven_Serverless,router,Amazon EventBridge / SNS,Routes and fans out events to correct processors,2,false,false
+E_Event_Driven_Serverless,queue,Amazon SQS,Buffers messages and decouples producers from consumers,3,false,false
+E_Event_Driven_Serverless,compute,AWS Lambda (workers),Processes events from the queue asynchronously,4,false,false
+E_Event_Driven_Serverless,database,Amazon DynamoDB,Serverless event state and result storage,5,false,false
+E_Event_Driven_Serverless,storage,Amazon S3,Stores event payloads and processed outputs,6,false,false
+E_Event_Driven_Serverless,monitoring,Amazon CloudWatch + X-Ray,Function logs and distributed event tracing,7,false,true
+E_Event_Driven_Serverless,security_identity,IAM Execution Roles,Least-privilege Lambda and event bridge policies,0,true,false

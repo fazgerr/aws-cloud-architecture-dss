@@ -1,0 +1,6 @@
+Architecture,LatencyBurden,Source,Reason
+A_Traditional_Web,2,Rubric,"Predictable request-response pattern"
+B_Managed_Container,2,Rubric,"Containerized API can provide stable latency"
+C_Serverless_API,3,Rubric,"Possible cold start or API Gateway overhead"
+D_High_Scale_Microservices,1,Rubric,"Performance-optimized architecture possible"
+E_Event_Driven_Serverless,3,Rubric,"Best for async flows, not always strict low-latency sync APIs"

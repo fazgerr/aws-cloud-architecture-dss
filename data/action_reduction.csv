@@ -1,0 +1,6 @@
+case_id,action,scenario,reduction
+Case 1,QueueBuffering,High Traffic,0.05
+Case 2,QueueBuffering,High Traffic,0.05
+Case 3,QueueBuffering,High Traffic,0.15
+Case 3,WAF,High Security,0.1
+Case 3,ShieldAdvanced,High Security,0.2

@@ -1,0 +1,6 @@
+Architecture,CloudCostEstimate,OpsHoursPerDay,OpsCost,TCO
+A_Traditional_Web,450,2.5,3750.0,4200.0
+B_Managed_Container,380,1.5,2250.0,2630.0
+C_Serverless_API,120,0.5,750.0,870.0
+D_High_Scale_Microservices,850,3.0,4500.0,5350.0
+E_Event_Driven_Serverless,140,0.75,1125.0,1265.0
